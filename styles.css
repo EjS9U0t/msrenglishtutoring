@@ -190,22 +190,12 @@ footer, footer a {
 
 #Contact {
 	text-align: center;
+	padding-bottom: 25px;
 }
 
-#ErrorMessage {
-	text-align: center;
-	color: red;
-}
-
-#Contact div {
-	padding-bottom: 15px;
-}
-
-.Label {
-	clear: both;
-	display: block;
-	font-style: italic;
-	color: #757575;
+footer a:hover, #Contact a:hover {
+	color: #06475e;
+	text-decoration: underline;
 }
 
 input {
@@ -301,18 +291,6 @@ textarea {
 /* Additional media queries for larger displays */
 /* tablets - portrait */
 @media screen and (min-width: 600px) {
-	#FormInputs {
-		display: inline-block;
-		float: left;
-		width: 47%;
-		padding-right: 3%;
-	}
-
-	#FormMessage {
-		float: left;
-		width: 47%;
-		padding-left: 3%;
-	}
 }
 
 /* tablets - landscape */
@@ -332,12 +310,8 @@ textarea {
 		font-size: 38px;
 	}
 
-	#FormInputs input {
-		width: 300px;
-	}
-
 	footer {
-		font-size: 19px;
+		font-size: 14px;
 	}
 
 	#Translations {
@@ -382,14 +356,6 @@ textarea {
 		width: 40%
 	}
 
-	#FormInputs {
-		padding-right: 1%;
-	}
-
-	#FormMessage {
-		padding-left: 1%;
-	}
-
 	#Contact textarea {
 		height: 200px;
 	}
@@ -399,6 +365,6 @@ textarea {
 	}
 
 	footer a {
-		font-size: 19px;
+		font-size: 14px;
 	}
 }
