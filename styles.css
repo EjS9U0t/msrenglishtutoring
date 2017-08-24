@@ -1,0 +1,404 @@
+@charset "utf-8";
+
+/* Style sheet for MSR English Tutoring. */
+
+/* TAGS */
+body {
+	background: #fff;
+	font-size: 100%;
+	width: 100%;
+}
+
+body, a, h1, h2, h3, h4, h5, h6, button, textarea {
+	color: #4f4f4f;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+}
+
+a {
+	color: #00aeef;
+	text-decoration: none;
+}
+
+h3 {
+	color: #00aeef;
+	font-size: 28px;
+	font-weight: bold;
+	padding: 20px 0;
+}
+
+h4 {
+	color: #fff;
+	font-size: 28px;
+	font-style: italic;
+}
+
+header, footer, #Content, #Contact {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+header {
+	padding: 30px 0;
+}
+
+#Button {
+	border: none;
+}
+
+footer {
+	border-top: 1px solid #00aeef;
+	padding: 20px 0;
+}
+
+footer, footer a {
+	font-size: 10px;
+}
+
+#Logo {
+	width: 100%;
+	height: 100%;
+	max-width: 440px;
+}
+
+#Translations {
+	float: right;
+}
+
+#Translations a {
+	padding-left: 15px;
+}
+
+#Translations a:hover {
+	color: #06475e;
+}
+
+#Banner img {
+	width: 100%;
+	max-height: 678px;
+}
+
+#BannerText {
+	color: #00aeef;
+	font-size: 20px;
+	padding: 15px 15% 0;
+	text-align: center;
+}
+
+#BannerText span {
+	display: block;
+	font-size: 30px;
+}
+
+#Content {
+	padding: 30px 0;
+	line-height: 24px;
+}
+
+#CV {
+	background: #e4f6fd;
+	text-align: center;
+	padding: 30px 0;
+}
+
+#Qualified, #Experienced {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#Testimonials {
+	background: #06475e url(assets/images/testimonial-background.jpg) no-repeat center;
+	color: #fff;
+	padding: 20px;
+}
+
+#Carousel {
+	width: 100%;
+	overflow: hidden;
+}
+
+#TestimonialsContent {
+	width: 400%;
+	list-style: none;
+	position: relative;
+	overflow: hidden;
+	-moz-animation: carousel 30s infinite;
+    -webkit-animation: carousel 30s infinite;
+    animation: carousel 30s infinite;
+}
+
+#TestimonialsContent > li {
+	position: relative;
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+@-moz-keyframes carousel {
+	0%		{left:0;}
+    15.2%	{left:0;}
+    16.7%	{left:-100%;}
+    31.9%	{left:-100%;}
+    33.4%	{left:-200%;}
+    48.5%	{left:-200%;}
+    50%		{left:-300%;}
+    65.2%	{left:-300%;}
+    66.7%	{left:-200%;}
+    81.9%	{left:-200%;}
+    83.4%	{left:-100%;}
+    98.5%	{left:-100%;}
+    100%	{left:0;}
+}
+
+@-webkit-keyframes carousel {
+	0%		{left:0;}
+    15.2%	{left:0;}
+    16.7%	{left:-100%;}
+    31.9%	{left:-100%;}
+    33.4%	{left:-200%;}
+    48.5%	{left:-200%;}
+    50%		{left:-300%;}
+    65.2%	{left:-300%;}
+    66.7%	{left:-200%;}
+    81.9%	{left:-200%;}
+    83.4%	{left:-100%;}
+    98.5%	{left:-100%;}
+    100%	{left:0;}
+}
+
+@keyframes carousel {
+	0%		{left:0;}
+    15.2%	{left:0;}
+    16.7%	{left:-100%;}
+    31.9%	{left:-100%;}
+    33.4%	{left:-200%;}
+    48.5%	{left:-200%;}
+    50%		{left:-300%;}
+    65.2%	{left:-300%;}
+    66.7%	{left:-200%;}
+    81.9%	{left:-200%;}
+    83.4%	{left:-100%;}
+    98.5%	{left:-100%;}
+    100%	{left:0;}
+}
+
+#TestimonialsContent li span {
+	font-size: 15px;
+	font-style: italic;
+}
+
+#Contact {
+	text-align: center;
+}
+
+#ErrorMessage {
+	text-align: center;
+	color: red;
+}
+
+#Contact div {
+	padding-bottom: 15px;
+}
+
+.Label {
+	clear: both;
+	display: block;
+	font-style: italic;
+	color: #757575;
+}
+
+input {
+	background: #fff;
+	border: none;
+	border-bottom: 1px solid #757575;
+	color: #4f4f4f;
+}
+
+textarea {
+	background: #fff;
+	border: none;
+	border: 1px solid #757575;
+	color: #757575;
+	width: 99%;
+	height: 140px;
+}
+
+#Button, .ContactMe {
+	border-radius: 10px;
+	background: #00aeef;
+	text-align: center;
+	color: #fff;
+	padding: 10px 40px;
+	display: block;
+	clear: both;
+	margin: 20px auto;
+	max-width: 250px;
+	background-image: linear-gradient(to bottom, #06475e, #06475e 50%, transparent 50%, transparent);
+	background-position: 0 100%;
+	background-size: 100% 200%;
+	transition: all .2s ease-in;
+}
+
+#Button:hover, .ContactMe:hover {
+	background-position: 0% 0%;
+}
+
+/* Modal window functionality */
+
+.ModalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.ModalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.ModalDialog > div {
+	width: 80%;
+	position: relative;
+	margin: 10% auto;
+	padding: 20px;
+	border-radius: 10px;
+	background: #fff;
+}
+
+.Close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -4px;
+	text-align: center;
+	top: -4px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+	padding: 0!important;
+}
+
+.Close:hover { background: #00aeef; }
+
+/* Additional media queries for larger displays */
+/* tablets - portrait */
+@media screen and (min-width: 600px) {
+	#FormInputs {
+		display: inline-block;
+		float: left;
+		width: 47%;
+		padding-right: 3%;
+	}
+
+	#FormMessage {
+		float: left;
+		width: 47%;
+		padding-left: 3%;
+	}
+}
+
+/* tablets - landscape */
+@media screen and (min-width: 800px) {
+	#BannerText span{
+		font-size: 40px;
+	}
+}
+
+/* desktops*/
+@media screen and (min-width: 1025px) {
+	body, a, h1, h2, h3, h4, h5, h6 {
+		font-size: 28px;
+	}
+
+	h3 {
+		font-size: 38px;
+	}
+
+	#FormInputs input {
+		width: 300px;
+	}
+
+	footer {
+		font-size: 19px;
+	}
+
+	#Translations {
+		margin-top: -30px;
+	}
+
+	#Banner {
+		position: relative;
+	}
+
+	#BannerText {
+		position: absolute;
+		bottom: 70px;
+		padding: 0;
+		width: 100%;
+		color: #fff;
+		text-shadow: 0 0 8px #000;
+		font-size: 2.4vw;
+	}
+
+	#BannerText span {
+		font-size: 4.8vw;
+	}
+
+	#Content {
+		line-height: 35px;
+	}
+
+	#CV {
+		overflow: hidden;
+	}
+
+	#Qualified, #Experienced {
+		width: 40%;
+		padding: 0 5%;
+		float:left;
+	}
+
+	#Carousel {
+		margin: 0 auto;
+		padding: 50px 0;
+		width: 40%
+	}
+
+	#FormInputs {
+		padding-right: 1%;
+	}
+
+	#FormMessage {
+		padding-left: 1%;
+	}
+
+	#Contact textarea {
+		height: 200px;
+	}
+
+	#Button {
+		font-size: 19px;
+	}
+
+	footer a {
+		font-size: 19px;
+	}
+}
