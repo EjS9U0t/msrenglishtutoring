@@ -3,6 +3,10 @@
 /* Style sheet for MSR English Tutoring. */
 
 /* TAGS */
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: #fff;
 	font-size: 100%;
